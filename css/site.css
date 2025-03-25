@@ -31,20 +31,19 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: red;
     text-decoration: none;
     text-align: center;
 }
 
-nav .opcao {
-    float: left;
-    width: 31.3%;
-    background-color: #b1ccf5;
-    padding: 10px 0;
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
     margin: 0 1%;
-    font-size: 26px;
 }
 
-nav .opcao:hover {
-    background-color: #83afd3;
+.menu{
+    text-align: center;
+    
 }
