@@ -1,0 +1,50 @@
+body {
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header {
+    height: 100px;
+    background-color: rgb(9, 9, 102);
+}
+
+header img {
+    height: 85px;
+    width: 85px;
+    float: left;
+    margin: 10px;
+}
+
+header h1 {
+    color: rgb(245, 245, 10);
+    float: left;
+    font-size: 50px;
+    margin: 17px;
+}
+
+/*MENU*/
+nav {
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    height: 55px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav .opcao {
+    float: left;
+    width: 31.3%;
+    background-color: #b1ccf5;
+    padding: 10px 0;
+    margin: 0 1%;
+    font-size: 26px;
+}
+
+nav .opcao:hover {
+    background-color: #83afd3;
+}
