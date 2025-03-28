@@ -1,49 +1,59 @@
 body {
-    margin: 0 auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    margin: 0 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(../img/campNou.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: absolute;
 }
 
 header {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
     height: 100px;
-    background-color: rgb(9, 9, 102);
+
 }
 
 header img {
-    height: 85px;
     width: 85px;
-    float: left;
-    margin: 10px;
 }
 
 header h1 {
     color: rgb(245, 245, 10);
-    float: left;
     font-size: 50px;
-    margin: 17px;
 }
 
-/*MENU*/
-nav {
-    clear: both;
-    width: 80%;
-    margin: 0 auto;
-    height: 55px;
+.right-header {
+   margin-right: 75px;
 }
 
-nav a {
-    color: red;
-    text-decoration: none;
-    text-align: center;
-}
-
-.menu a{
+.right-header a {
     text-decoration: none;
     color: white;
-    padding: 5px;
-    margin: 0 1%;
+    margin: 10px;
+    margin-right: 75px;
+    
 }
 
-.menu{
+section {
+    flex : 1;
+    margin-top: 0%;
+    width: 100%;
+    clear: both;
+}
+section h1 {
+    color: rgb(245, 245, 10);
+    font-size: 50px;
     text-align: center;
-    
+    font-size: 40px
+   
+}
+
+footer {
+    background-color: rgb(9, 9, 102);
+    margin-top: auto;
+  
 }
