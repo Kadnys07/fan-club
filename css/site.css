@@ -1,59 +1,95 @@
 body {
-    margin: 0 ;
+    margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-image: url(../img/campNou.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: absolute;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
 }
 
 header {
-    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
+    background-color: #144f9c;
     display: flex;
     text-align: center;
     align-items: center;
+    height: 70px;
     justify-content: space-between;
-    height: 100px;
-
 }
 
 header img {
-    width: 85px;
+    width: 65px;
+    padding-left: 40px;
+    padding-right: 15px;
+}
+
+header img.nike {
+    width: 65px;
+    padding-left: 15px;
+    padding-right: 40px;
 }
 
 header h1 {
-    color: rgb(245, 245, 10);
+    color: rgb(202, 169, 20);
     font-size: 50px;
+    text-align: center;
 }
 
 .right-header {
-   margin-right: 75px;
+    align-items: center;
 }
 
 .right-header a {
     text-decoration: none;
     color: white;
+
     margin: 10px;
     margin-right: 75px;
-    
+    align-items: center;
+
 }
 
 section {
-    flex : 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 0%;
-    width: 100%;
+    width : 100%;
     clear: both;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%), url(/img/campNou.jpg) no-repeat center center;
+   background-size: cover;
 }
+
 section h1 {
-    color: rgb(245, 245, 10);
+    color:#fbc515;
     font-size: 50px;
     text-align: center;
-    font-size: 40px
-   
+    font-size: 40px;
+
+}
+
+section p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 20%;
+    color: white;
+
 }
 
 footer {
     background-color: rgb(9, 9, 102);
     margin-top: auto;
-  
+
+}
+
+table .tabelaPontuacao{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid #fbc515;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
 }
