@@ -55,18 +55,29 @@ section {
     align-items: center;
     justify-content: center;
     margin-top: 0%;
-    width : 100%;
+    width: 100%;
     clear: both;
-    height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%), url(/img/campNou.jpg) no-repeat center center;
-   background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    content: "";
+
 }
 
 section h1 {
-    color:#fbc515;
+    color: #fbc515;
     font-size: 50px;
     text-align: center;
     font-size: 40px;
+
+}
+
+section h2 {
+    color: #fbc515;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
 
 }
 
@@ -77,14 +88,19 @@ section p {
     color: white;
 
 }
+section img {
+    width: 20px;
+    margin: 0 auto;
+    display: block;
+    
+}
 
 footer {
-    background-color: rgb(9, 9, 102);
-    margin-top: auto;
+  
 
 }
 
-table .tabelaPontuacao{
+table .tabelaPontuacao {
     margin: 10px auto;
     text-align: center;
 }
@@ -96,10 +112,12 @@ table .tabelaPontuacao{
     color: #fff;
     padding: 5px;
     border: transparent;
-    
+
 }
 
-tr,td,th {
+tr,
+td,
+th {
 
     padding: 15px;
     color: #fff;
@@ -108,7 +126,8 @@ tr,td,th {
     border-radius: 6px;
 }
 
-tr,td {
+tr,
+td {
     font-size: 14px;
 }
 
@@ -123,21 +142,22 @@ tr:nth-child(odd) {
 
 .faleConosco {
     background-color: #13459c;
-    width: 300px;
+    width: 270px;
     margin: 0px auto;
     font-weight: bold;
     margin-bottom: 10px;
     border-radius: 10px;
-    
+
 }
+
 .h2 {
     color: #e32539;
     font-size: 30px;
     text-align: center;
     margin-bottom: 15px;
-    background-color:  #f3bd16;
+    background-color: #f3bd16;
     border-radius: 10px;
-    padding: 15px 30px; 
+    padding: 15px 30px;
 }
 
 .faleConosco label {
@@ -145,9 +165,9 @@ tr:nth-child(odd) {
     font-size: 15px;
     margin: 5px auto;
 }
- 
+
 .faleConosco legend {
-    color:  #f3bd16;
+    color: #f3bd16;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -155,7 +175,9 @@ tr:nth-child(odd) {
 }
 
 
-.faleConosco input,.faleConosco textarea,.faleConosco select {
+.faleConosco input,
+.faleConosco textarea,
+.faleConosco select {
     margin: 5px auto;
     width: 100%;
     padding: 5px 0;
@@ -171,18 +193,23 @@ tr:nth-child(odd) {
     margin: 0 10%;
     background-color: #f3bd16;
     font-weight: bold;
-    font-size: 16px;cursor: pointer; /* Mostra o cursor de mão ao passar o mouse */
-    transition: background-color 0.3s ease; /* Suaviza a transição de cor */
+    font-size: 16px;
+    cursor: pointer;
+    /* Mostra o cursor de mão ao passar o mouse */
+    transition: background-color 0.3s ease;
+    /* Suaviza a transição de cor */
 }
 
 .faleConosco button:hover {
-    background-color: #d1a514; /* Cor ao passar o mouse */
+    background-color: #d1a514;
+    /* Cor ao passar o mouse */
 }
 
 .faleConosco button:active {
-    background-color: #b08e12; /* Cor ao clicar */
+    background-color: #b08e12;
+    /* Cor ao clicar */
 }
+
 .sexo {
-   display: flex;
-   
+    display: flex;
 }
