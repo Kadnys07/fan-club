@@ -85,11 +85,104 @@ footer {
 }
 
 table .tabelaPontuacao{
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 2px solid #fbc515;
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
-    color: white;
+}
+
+.tituloTabela {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+    border: transparent;
+    
+}
+
+tr,td,th {
+
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+tr,td {
+    font-size: 14px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #e32539;
+}
+
+tr:nth-child(odd) {
+    background-color: #13459c;
+}
+
+.faleConosco {
+    background-color: #13459c;
+    width: 300px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+}
+.h2 {
+    color: #e32539;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color:  #f3bd16;
+    border-radius: 10px;
+    padding: 15px 30px; 
+}
+
+.faleConosco label {
+    color: #fff;
+    font-size: 15px;
+    margin: 5px auto;
+}
+ 
+.faleConosco legend {
+    color:  #f3bd16;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.faleConosco input,.faleConosco textarea,.faleConosco select {
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.faleConosco textarea {
+    height: 100%;
+    resize: none;
+}
+
+.faleConosco button {
+    width: 30%;
+    margin: 0 10%;
+    background-color: #f3bd16;
+    font-weight: bold;
+    font-size: 16px;cursor: pointer; /* Mostra o cursor de mão ao passar o mouse */
+    transition: background-color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+.faleConosco button:hover {
+    background-color: #d1a514; /* Cor ao passar o mouse */
+}
+
+.faleConosco button:active {
+    background-color: #b08e12; /* Cor ao clicar */
+}
+.sexo {
+   display: flex;
+   
 }

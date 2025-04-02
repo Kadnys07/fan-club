@@ -23,6 +23,46 @@
         <img src="img/nike.jpg" alt="nike logo" class="nike">
     </header>
     <section>
-        
+        <h2 class="h2">Faça parte do Fã Clube!</h2>
+
+
+        <form name="frmdfaleconsco" method="post" action="#">
+            <fieldset class="faleConosco">
+                <legend>Dados pessoais</legend>
+                <label for="nome">Nome: </label>
+                <input type="text" name="txtnome" id="nome">
+
+                
+                <label for="Sexo">Sexo:</label><br>
+                <div class="sexo">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="sexo" id="masculino" value="M">
+                    <label for="masculino">Feminino</label>
+                    <input type="radio" name="sexo" id="feminino" value="F">
+                </div>
+
+                <label for="nascimento">Data de Nascimento: </label>
+                <input type="date" name="txtnascimento" id="nascimento">
+
+                <label for="fone">Telefone: </label>
+                <input type="text" name="txtfone" id="fone">
+
+                <label for="email">E-mail: </label>
+                <input type="email" name="txtemail" id="email">
+            </fieldset>
+            <fieldset class="faleConosco">
+                <legend>Motivo para Participar</legend>
+                <label for="motivo">Motivo: </label>
+                <select name="seumotivo" id="motivo">
+                    <option value="">Escolha</option>
+                    <option value="RE">Informações do Clube</option>
+                    <option value="SU">Dar Sugestao</option>
+                    <option value="PR">Atualização de Jogadores</option>
+                </select>
+                <label for="comentario">Comentário: </label>
+                <textarea name="txacomentario" id="comentario" class="faleConosco"></textarea>
+                <button type="reset">Limpar</button><button type="submit">Enviar</button>
+            </fieldset>
+        </form>
     </section>
 </body>
