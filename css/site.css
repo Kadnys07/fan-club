@@ -8,45 +8,49 @@ body {
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);
 }
 
+body::-webkit-scrollbar {
+    width: 0;
+}
+
 header {
     background-color: #144f9c;
-    display: flex;
-    text-align: center;
-    align-items: center;
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Espaça os itens nas extremidades */
     height: 70px;
-    justify-content: space-between;
+    padding: 0 20px; /* Espaçamento interno opcional */
 }
 
 header img {
     width: 65px;
-    padding-left: 40px;
-    padding-right: 15px;
 }
 
-header img.nike {
-    width: 65px;
-    padding-left: 15px;
-    padding-right: 40px;
+header nav {
+    display: flex; /* Ativa o Flexbox no menu */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    flex: 1; /* Faz o menu ocupar o espaço restante */
 }
 
-header h1 {
-    color: rgb(202, 169, 20);
-    font-size: 50px;
-    text-align: center;
+header nav ul {
+    display: flex; /* Garante que os itens do menu fiquem em linha */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Espaçamento entre os itens do menu */
 }
 
-.right-header {
-    align-items: center;
+header nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Cor do texto */
+    font-weight: bold;
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
-.right-header a {
-    text-decoration: none;
-    color: white;
-
-    margin: 10px;
-    margin-right: 75px;
-    align-items: center;
-
+header nav ul li a:hover {
+    background-color: #f3bd16; /* Cor de fundo ao passar o mouse */
+    color: #144f9c; /* Cor do texto ao passar o mouse */
 }
 
 section {
@@ -63,6 +67,10 @@ section {
     position: absolute;
     content: "";
 
+}
+
+section {
+    overflow: auto; /* Garante que o conteúdo não ultrapasse os limites */
 }
 
 section h1 {

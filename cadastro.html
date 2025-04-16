@@ -7,6 +7,7 @@
     <title>Club Blaugranas</title>
     <link rel="icon" href="img/barcelona-icon.jpg" type="image">
     <link rel="stylesheet" href="css/site.css">
+    <script src="./js/site.js"></script>
 </head>
 
 <body>
@@ -15,9 +16,11 @@
 
         <div class="right-header">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="info.html">Sobre</a>
-                <a href="cadastro.html">Contato</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Sobre</a></li>
+                    <li><a href="cadastro.html">Contato</a></li>
+                </ul>
             </nav>
         </div>
         <img src="img/nike.jpg" alt="nike logo" class="nike">
@@ -26,7 +29,8 @@
         <h2 class="h2">Faça parte do Fã Clube!</h2>
 
 
-        <form name="frmdfaleconsco" method="post" action="#">
+        <form name="frmdfaleconsco" method="get" action="#" onsubmit="return validaCadastro()">
+           
             <fieldset class="faleConosco">
                 <legend>Dados pessoais</legend>
                 <label for="nome">Nome: </label>
@@ -50,6 +54,7 @@
                 <label for="email">E-mail: </label>
                 <input type="email" name="txtemail" id="email">
             </fieldset>
+
             <fieldset class="faleConosco">
                 <legend>Motivo para Participar</legend>
                 <label for="motivo">Motivo: </label>
@@ -61,7 +66,7 @@
                 </select>
                 <label for="comentario">Comentário: </label>
                 <textarea name="txacomentario" id="comentario" class="faleConosco"></textarea>
-                <button type="reset">Limpar</button><button type="submit">Enviar</button>
+                <button type="reset">Limpa</button><button type="submit">Enviar</button>
             </fieldset>
         </form>
     </section>
