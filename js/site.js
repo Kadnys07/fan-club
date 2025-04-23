@@ -55,3 +55,7 @@ if (document.getElementById("comentario").value == "") {
 
 return true;
 }
+
+$(document).ready(function() {
+$("header").load("pages/general/cabecalho.html");
+});
